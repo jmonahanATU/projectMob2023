@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Select Option:
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,19 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Select any option</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+    <ul>
+      <ion-button [routerLink]="['/counties']" fill="solid">Countie flags</ion-button>
+      <br>
+      <ion-button [routerLink]="['/movies']" fill="solid">Movies</ion-button>
+      <br>
+      <ion-button [routerLink]="['/news']" fill="solid">News</ion-button>
+      <br>
+      <ion-button [routerLink]="['/weather']" fill="solid">Weather</ion-button>
+    </ul>
   </div>
 </ion-content>

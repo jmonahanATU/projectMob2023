@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>news</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">news</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+<div>
+  <ol>
+    <ion-card *ngFor="let content of myNews">
+      <img alt="websitImage" src={{content.urlToImage}}/>
+    <ion-card-header>
+      <ion-card-title>{{content.title}}</ion-card-title>
+      <ion-card-subtitle>{{content.description}}</ion-card-subtitle>
+      <ion-card-content>{{content.content}}</ion-card-content>
+
+    </ion-card-header>
+
+    </ion-card>
+  </ol>
+</div>
+
+</ion-content>
+
+
